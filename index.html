@@ -56,77 +56,144 @@
 		</div>
 
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <div id="form">
-                <form>
-                    <h2 id="home-energy-label"><i class="fa fa-home" aria-hidden="true"></i> HOME ENERGY LABEL</h2>	
+            <div class="form-group">
+                <label>How do you come to College?</label>
+                <div class="alert alert-danger" role="alert" id="college-alert"><strong>Oops!</strong> You need to make a selection.</div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="collegeOptionsRadios" id="optionsRadio1" value="option1">
+                        Walk/Bike
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="collegerOptionsRadios" id="optionsRadio2" value="option2">
+                        Car
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="collegeOptionsRadios" id="optionsRadio3" value="option3">
+                        Bus
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="collegeOptionsRadios" id="optionsRadio4" value="option4">
+                        Carpool
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>What do you eat more often?</label>
+                <div class="alert alert-danger" role="alert" id="food-alert"><strong>Oops!</strong> You need to make a selection.</div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="foodOptionsRadios" id="optionsRadio5" value="option1">
+                        Fast Food
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="foodOptionsRadios" id="optionsRadio6" value="option2">
+                        Home Cooked food
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Are you mostly...?</label>
+                    <div class="alert alert-danger" role="alert" id="veg-alert"><strong>Oops!</strong> You need to make a selection.</div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="vegOptionsRadios" id="optionsRadio7" value="option1">
+                            Vegetarian
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="vegOptionsRadios" id="optionsRadio8" value="option2">
+                            Non-Vegetarian
+                        </label>
+                    </div>
                     <div class="form-group">
-                        <label for="electric">*Monthly Electric Bill</label>
-                        <div class="input-group">
-                            <div class="input-group-addon">₹</div>
-                            <input class="form-control" id="electric" type="number" min="0" step="0.01">
+                        <label>Do you turn off the lights when you leave your Room/Classroom?</label>
+                        <div class="alert alert-danger" role="alert" id="light-alert"><strong>Oops!</strong> You need to make a selection.</div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="lightOptionsRadios" id="optionsRadio9" value="option1">
+                                Yes
+                            </label>
                         </div>
-                        <span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
-                    </div>
-                    <div class="form-group">
-                        <label for="gas">*Monthly Natural Gas Bill</label>
-                        <div class="input-group">
-                            <div class="input-group-addon">₹</div>
-                            <input class="form-control" id="gas" type="number" min="0" step="0.01">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="lightOptionsRadios" id="optionsRadio10" value="option2">
+                                No
+                            </label>
                         </div>
-                        <span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
-                    </div>
-                    <div class="form-group">
-                        <label for="oil">*Monthly Oil Bil</label>
-                        <p><i>Somes homes use oil as a fuel source for heating furnances or boilers, and is often abbreviated as HHO.</i></p>
-                        <div class="input-group">
-                            <div class="input-group-addon">₹</div>
-                            <input class="form-control" id="oil" type="number" min="0" step="0.01">
-                        </div>
-                        <span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
-                    </div>
-                    <br/>
-                    <h3 class="form-section-label" id="travel-label"><i class="fa fa-globe" aria-hidden="true"></i> Travel</h3>
-                    <div class="form-group">
-                        <label for="car">Annual Miles Driven On Your Car</label>
-                        <input class="form-control" id="car" type="number" min="0" step="1">
-                        <span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
-                    </div>
-                    <div class="form-group">
-                        <label for="flights-4-less">Number of Flights taken in the past year (4 hours or less)</label>
-                        <input class="form-control" id="flights-4-less" type="number" min="0" step="1">
-                        <span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
+                        <div class="form-group">
+                            <label>Do you unplug appliances/chargers when not in use?</label>
+                            <div class="alert alert-danger" role="alert" id="unplug-alert"><strong>Oops!</strong> You need to make a selection.</div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="unplugOptionsRadios" id="optionsRadio11" value="option1">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="unplugOptionsRadios" id="optionsRadio12" value="option2">
+                                    No
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label>How do you dry clothes?</label>
+                                <div class="alert alert-danger" role="alert" id="dry-alert"><strong>Oops!</strong> You need to make a selection.</div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="dryOptionsRadios" id="optionsRadio13" value="option1">
+                                        Hang to dry
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="dryOptionsRadios" id="optionsRadio14" value="option2">
+                                        Dryer
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="dryOptionsRadios" id="optionsRadio15" value="option1">
+                                        both
+                                    </label>
+                                </div>
                     </div>
                     <br/>
                     <h3 class="form-section-label" id="waste-label"><i class="fa fa-recycle" aria-hidden="true"></i> Waste</h3>
                     <div class="form-group">
-                        <label>Do you recycle newspaper?</label>
-                        <div class="alert alert-danger" role="alert" id="newspaper-alert"><strong>Oops!</strong> You need to make a selection.</div>
+                        <label>Do you recycle? if then, what?</label>
+                        <div class="alert alert-danger" role="alert" id="recycle-alert"><strong>Oops!</strong> You need to make a selection.</div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="newspaperOptionsRadios" id="optionsRadio1" value="option1">
-                                Yes
+                                <input type="radio" name="recycleOptionsRadios" id="optionsRadio16" value="option1">
+                                Newspapers/Magazines
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="newspaperOptionsRadios" id="optionsRadio2" value="option2">
-                                No
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Do you recycle aluminium and tin?</label>
-                        <div class="alert alert-danger" role="alert" id="newspaper-alert"><strong>Oops!</strong> You need to make a selection.</div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="alumtinOptionsRadios" id="optionsRadio3" value="option1">
-                                Yes
+                                <input type="radio" name="recycleOptionsRadios" id="optionsRadio17" value="option2">
+                                Glass
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="alumtinOptionsRadios" id="optionsRadio4" value="option2">
-                                No
+                                <input type="radio" name="recycleOptionsRadios" id="optionsRadio18" value="option1">
+                                Plastics
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="recycleOptionsRadios" id="optionsRadio19" value="option2">
+                                Aluminium and tin
                             </label>
                         </div>
                     </div>
@@ -137,44 +204,43 @@
                 <div id="results" class="text-center">
 					<h1 id="score"></h1>
 					<br/>
-					<p class="lead">This is the number of average Carbon Footprints released by you per year</p>
+					<p class="lead">This represents the amount of greenhouse gases in units of carbon dioxide you emit per year</p>
 					<br/>
-					<h5 class="bg-success score-info">438,000 or below is EXCELLENT</h5>
-					<h5 class="bg-info score-info">438,000 to 1,167,927 is GOOD</h5>
-					<h5 class="bg-warning score-info">1,167,927 to 1,606,000 is AVERAGE</h5>
-					<h5 class="bg-danger score-info">1,606,000 or above is BAD</h5>
+					<h5 class="bg-success score-info">100 or below is EXCELLENT</h5>
+					<h5 class="bg-info score-info">100 to 5000 is GOOD</h5>
+					<h5 class="bg-danger score-info">5000 or above is BAD</h5>
 					<br/>
 					<br/>
 					<br/>
 					<button id="recalculate-btn" type="button" class="btn btn-success btn-lg btn-block">RECALCULATE</button>
-
-           <table class="calcgraph" style="margin: auto;">
-          <tbody><tr class="calcgraph">
-            <td class="calcgraph"><img src="images/blackfoot2.gif" width="105" height="38" alt="Your footprint is 0.32 metric tons per year"></td>
-            <td class="calcgraph"><img src="images/blackfoot1.gif" width="105" height="208" alt="The average footprint for people in India is 1.73 metric tons"></td>
-            <td class="calcgraph"><img src="images/blackfoot.gif" width="105" height="240" alt="The worldwide target to combat climate change is 2 metric tons"></td>
-        </tr>
-        <tr class="calcgraph">
-            <th class="calcgraph">Your<br>Footprint</th><th class="calcgraph">Country<br>Average</th><th class="calcgraph">World<br>Target</th>
-        </tr>
-    </tbody>
-    </table>
-   <div class="resultspic"></div>
-    <table class="gentable resultsnotes"><tbody><tr><td>
-   <ul class="resultsbullets">
-    <li class="resultsbullets">The average footprint for people in India is 1.73 metric tons!!</li><li class="resultsbullets">The average for the European Union is about 6.4 metric tons</li><li class="resultsbullets">The average worldwide carbon footprint is about 5 metric tons</li><li class="resultsbullets">The worldwide target to combat climate change is 2 metric tons</li>
-  </ul>
-  </td></tr></tbody></table>
-  </div>	
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-				
-			</div>
-			
-	</div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="js/script.js" type="text/javascript"></script>
-</body>
-</html>
+                    <table class="calcgraph" style="margin: auto;">
+                        <tbody><tr class="calcgraph">
+                          <td class="calcgraph"><img src="images/blackfoot2.gif" width="105" height="38" alt="Your footprint is 0.32 metric tons per year"></td>
+                          <td class="calcgraph"><img src="images/blackfoot1.gif" width="105" height="208" alt="The average footprint for people in India is 1.73 metric tons"></td>
+                          <td class="calcgraph"><img src="images/blackfoot.gif" width="105" height="240" alt="The worldwide target to combat climate change is 2 metric tons"></td>
+                      </tr>
+                      <tr class="calcgraph">
+                          <th class="calcgraph">Your<br>Footprint</th><th class="calcgraph">Country<br>Average</th><th class="calcgraph">World<br>Target</th>
+                      </tr>
+                  </tbody>
+                  </table>
+                 <div class="resultspic"></div>
+                  <table class="gentable resultsnotes"><tbody><tr><td>
+                 <ul class="resultsbullets">
+                  <li class="resultsbullets">The average footprint for people in India is 1.73 metric tons</li><li class="resultsbullets">The average for the European Union is about 6.4 metric tons</li><li class="resultsbullets">The average worldwide carbon footprint is about 5 metric tons</li><li class="resultsbullets">The worldwide target to combat climate change is 2 metric tons</li>
+                </ul>
+                </td></tr></tbody></table>
+                </div>	
+                          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                              
+                          </div>
+                          
+                  </div>
+                    
+          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          <!-- Latest compiled and minified JavaScript -->
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+          <script src="js/script.js" type="text/javascript"></script>
+      </body>
+      </html>
