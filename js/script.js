@@ -32,7 +32,7 @@ $(document).ready(function() {
 			var totalScore = "";
 
 			if (document.getElementById("optionsRadio1").checked) {
-				collegegeScore = 0;
+				collegeScore = 10;
 			}
 			// console.log("Newspaper score is: " + newspaperScore);
 
@@ -76,7 +76,7 @@ $(document).ready(function() {
 			} 
 
             if (document.getElementById("optionsRadio13").checked) {
-				dryScore = 0;
+				dryScore = 10;
 			} 
             if (document.getElementById("optionsRadio14").checked) {
 				dryScore = 750;
@@ -124,22 +124,22 @@ $(document).ready(function() {
 		var collegeSelection4 = document.getElementById("optionsRadio4").checked;
         var foodSelection1 = document.getElementById("optionsRadio5").checked;
 		var foodSelection2 = document.getElementById("optionsRadio6").checked;
-		var vegSelection3 = document.getElementById("optionsRadio7").checked;
-		var vegSelection4 = document.getElementById("optionsRadio8").checked;
+		var vegSelection1 = document.getElementById("optionsRadio7").checked;
+		var vegSelection2 = document.getElementById("optionsRadio8").checked;
         var lightSelection1 = document.getElementById("optionsRadio9").checked;
 		var lightSelection2 = document.getElementById("optionsRadio10").checked;
-		var unplugSelection3 = document.getElementById("optionsRadio11").checked;
-		var unplugSelection4 = document.getElementById("optionsRadio12").checked;
+		var unplugSelection1 = document.getElementById("optionsRadio11").checked;
+		var unplugSelection2 = document.getElementById("optionsRadio12").checked;
         var drySelection1 = document.getElementById("optionsRadio13").checked;
 		var drySelection2 = document.getElementById("optionsRadio14").checked;
 		var drySelection3 = document.getElementById("optionsRadio15").checked;
-		var recycleSelection4 = document.getElementById("optionsRadio16").checked;
-        var recycleSelection1 = document.getElementById("optionsRadio17").checked;
-		var recycleSelection2 = document.getElementById("optionsRadio18").checked;
-		var recycleSelection3 = document.getElementById("optionsRadio19").checked;
+		var recycleSelection1 = document.getElementById("optionsRadio16").checked;
+        var recycleSelection2 = document.getElementById("optionsRadio17").checked;
+		var recycleSelection3 = document.getElementById("optionsRadio18").checked;
+		var recycleSelection4 = document.getElementById("optionsRadio19").checked;
 		
 
-		if (collegeSelection1 == false && collegeSelection2 == false && collegeSelection3 ==false && collegeSelection4 ==false|| foodSelection1 == false && foodSelection2 == false || vegSelection3 == false && vegSelection4 == false|| lightSelection1==false && lightSelection2==false || unplugSelection3==false && unplugSelection4==false || drySelection1
+		if (collegeSelection1 == false && collegeSelection2 == false && collegeSelection3 ==false && collegeSelection4 ==false|| foodSelection1 == false && foodSelection2 == false || vegSelection1 == false && vegSelection2 == false|| lightSelection1==false && lightSelection2==false || unplugSelection1==false && unplugSelection2==false || drySelection1
             ==false && drySelection2==false && drySelection3==false || recycleSelection1==false && recycleSelection2==false && recycleSelection3==false && recycleSelection4==false) {
 			if (collegeSelection1 == false && collegeSelection2 == false && collegeSelection3 == false && collegeSelection4 ==false) {
 				$("#college-alert").show();
@@ -151,7 +151,7 @@ $(document).ready(function() {
 			} else {
 				$("#food-alert").hide();
 			}
-            if (vegSelection3 == false && vegSelection4 == false) {
+            if (vegSelection1 == false && vegSelection2 == false) {
 				$("#veg-alert").show();
 			} else {
 				$("#veg-alert").hide();
@@ -161,7 +161,7 @@ $(document).ready(function() {
 			} else {
 				$("#light-alert").hide();
 			}
-            if (unplugSelection3 == false && unplugSelection4 == false) {
+            if (unplugSelection1 == false && unplugSelection2 == false) {
 				$("#unplug-alert").show();
 			} else {
 				$("#unplug-alert").hide();
@@ -172,7 +172,7 @@ $(document).ready(function() {
 				$("#dry-alert").hide();
 			}
 
-			if (recycleSelection1 == false && recycleSelection2 == false && recycleSelection3 && recycleSelection4) {
+			if (recycleSelection1 == false && recycleSelection2 == false && recycleSelection3==false && recycleSelection4 == false) {
 				$("#recycle-alert").show();
 			} else {
 				$("#recycle-alert").hide();
